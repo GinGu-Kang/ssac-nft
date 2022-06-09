@@ -1,5 +1,5 @@
-const nftName = "cripto-alpaca";
-const description = "cripto-alpaca, made by cripto-alpaca cju-XR";
+const nftName = "So scary alpaca";
+const description = "So scary alpaca, made by SSAC";
 const hiddenImgUrl = "ipfs://QmcSm7vfLiumRDX3NTWYhmgeUmqJMFby3Ckoft9yP3pH3A";
 const totalNum = 100;
 
