@@ -163,7 +163,7 @@ nav {
     overflow:hidden; 
 }
 .nft-img {
-    width: 333px;
+    width: 100vw;
     height: 333px;
     display: flex;
     justify-content: space-between;
@@ -177,4 +177,9 @@ nav {
 }
 .container04{
     height: 1080px;
+}
+
+.gallery-img{
+    transform: translateX(20px);
+    transition: all ease 0.5s 0s;
 }
