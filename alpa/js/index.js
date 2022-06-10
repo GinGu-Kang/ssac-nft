@@ -20,7 +20,6 @@ function imgLoop(interval) {
     galleryImgs.css("transform", "translateX(" + shiftValue + "px)")
     shiftValue-=10
     if (Math.abs(shiftValue) - Math.abs(changedValue) > imgWidth){
-        console.log(Math.abs(shiftValue) - Math.abs(changedValue));
         nft_img.append("<img class='gallery-img'src='/images/nft0"+imgNum+".png'>");
         imgNum+=1;
         if (imgNum==7){
@@ -31,7 +30,7 @@ function imgLoop(interval) {
   }
   setInterval(function() {
     imgLoop(0);
-  }, 30);
+  }, 100);
 function resetImg(){
     nft_img.append(img);
     setInterval(function() {
