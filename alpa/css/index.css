@@ -15,7 +15,41 @@ a:hover{text-decoration:underline}
     background-color: #0F0045;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
+
+/* main */
+.main-section{
+    width: 100%;
+    height: 1023px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-ssag {
+    width: 1320px;
+    height: 851px;
+
+}
+.main-img {
+   width: 1320px;
+   height: 554px;
+   position: absolute;
+   top: 134px;
+   /* display: none; */
+}
+.main-logo {
+    width: 1320px;
+    height: 469px;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* main */
+
 header {
     width: 100%;
     height: 100px;
@@ -50,6 +84,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     justify-content: space-between;
+    cursor: pointer;
 }
 .gnb ul li {
    display: flex;
@@ -62,6 +97,7 @@ nav {
     background-color: #0F0045;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .story-contents {
     width: 1320px;
@@ -174,6 +210,7 @@ nav {
 }
 .container04{
     height: 4314px;
+    position: relative;
 }
 
 .gallery-img{
@@ -233,9 +270,7 @@ nav {
     margin-right: 137px;
 }
 
-.loadmap-item-wrapper{
 
-}
 .loadmap-item-wrapper .sub-title{
 
 
@@ -310,11 +345,56 @@ nav {
 .partner-inner img{
     width: 230px;
     height: 230px;
+    position: relative;
+    opacity: 0.61;
+    filter: brightness(0.7);
+    transition: all ease 0.5s 0s;
+
 }
+.partner-inner img:hover{
+    opacity: 1.0;
+    filter: brightness(1.0);
+}
+.partner-item:hover .partner-text-name{
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 5px 8px 10px rgba(0, 0, 0, 0);
+}
+.partner-item:hover .partner-text{
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 5px 8px 10px rgba(0, 0, 0, 0);
+}
+
 .partner-inner{
     display: flex;
     justify-content: space-between;
 }
+.partner-text{
+  text-shadow: 5px 8px 10px rgba(0, 0, 0, 0.16);
+  font-family: NotoSansKR;
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+    position: relative;
+    bottom: 134px;
+    right: 161px;
+    transition: all ease 0.5s 0s;
+}
+.partner-text-name{
+  text-shadow: 5px 8px 10px rgba(0, 0, 0, 0.16);
+  font-family: NotoSansKR;
+  font-size: 16px;
+  text-align: left;
+  color: #bababa;
+    position: relative;
+    bottom: 102px;
+    left: 85px;
+    transition: all ease 0.5s 0s;
+}
+
+
+
+
+
 
 .container06{
     display: flex;
@@ -334,7 +414,215 @@ nav {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #fff;
   margin-bottom: 68px;
+}
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #0F0045;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-img{
+    width: 150px;
+    height: 106px;
+}
+.section-footer {
+    width: 1320px;
+    height: 134px;
+    display: flex;
+    justify-content: center;
+}
+.footer-items {
+    width: 800px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-inner01{
+    width: 839px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.footer-font {
+    color: #848484;
+}
+.padding{
+    padding-left: 5px;
+}
+
+.footer-item::after{
+    padding: 0 10px;
+    content:"|";    
+}
+/* footer */
+
+.FAQ-inner{
+  width: 1320px;
+  height: 109px;
+  margin: 68px 0px 46px 0;
+  padding-left: 53px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(10,38,94);
+  display: flex;
+  align-items: center;
+}
+
+.FAQ-title .Q{
+    width: 18px;
+  height: 36px;
+  margin: 0 44px 1px 0;
+  -webkit-text-stroke: 2px #00ffb1;
+  font-family: NotoSansCJKKR;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+}
+.FAQ-title .question{
+    width: 442px;
+    height: 32px;
+    margin: 4px 684.8px 0 44px;
+    font-family: NotoSansKR;
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+
+}
+.FAQ-title svg{
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: all ease 0.5s 0s;
+    
+}
+.FAQ-inner input[type="checkbox"]{
+    display: none;
+}
+
+.FAQ-inner-answer{
+    width: 1320px;
+    height: 109px;
+    margin: 68px 0px -80px 0;
+    padding-left: 53px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(10,38,94);
+    display: none;
+    align-items: center;
+    position: relative;
+    top: -100px;
+    transition: all ease 0.5s 0s;
+  }
+
+  .FAQ-title .A{
+    width: 18px;
+  height: 36px;
+  margin: 0 44px 1px 0;
+  -webkit-text-stroke: 2px #00ffb1;
+  font-family: NotoSansCJKKR;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+}
+
+.FAQ-title .answer{
+    width: 442px;
+    height: 32px;
+    margin: 4px 684.8px 0 44px;
+    font-family: NotoSansKR;
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+
+
+.container02-img{
+    width: 345px;
+    height: 331px;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.container02 #hand-img1{
+    left:229px;
+    
+}
+.container02 #hand-img2{
+    left: 1322px;
+}
+.container02 #hand-img3{
+    right: 0px;
+    top: 306px;
+}
+.container02 #hand-img4{
+    bottom: 0px;
+    right: 218px;
+}
+.container02 #hand-img5{
+    bottom: 0px;
+    left: 648px;
+}
+.container02 #hand-img6{
+    left: 0px;
+    bottom: 209px;
+}
+.container02 #hand-img7{
+    left: 0px;
+    top: 187px;
+}
+
+.story-contents{
+    position: relative;
+    z-index: 5;
+}
+
+.container04-img{
+    width: 485px;
+    height: 481px;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.container04 #left1{
+    left: 0px;
+    top: 608px;
+}
+.container04 #left2{
+    left: 0px;
+    top: 1993px;
+}
+.container04 #left3{
+    left: 0px;
+    top: 3910px;
+}
+.container04 #right1{
+    right: 0px;
+    
+}
+.container04 #right2{
+    right: 0px;
+    top: 1000px;
+}
+.container04 #right3{
+    right: 0px;
+    top: 3160px;
 }

@@ -37,3 +37,25 @@ function resetImg(){
             resetImg();
           }, );
 }
+
+function changeAngle(e){
+  // $("svg").css({'transform':'rotate(360deg)'})
+  if(!$("#"+e).prop("checked")){
+    $("#"+e+"-svg").css({'transform':'rotate(360deg)'});
+    $("#"+e+"-answer").css("display","flex");
+  }else{
+    $("#"+e+"-svg").css({'transform':'rotate(180deg)'})
+    $("#"+e+"-answer").css("display","none");
+  }
+  
+}
+
+  // $( '.main-img' ).animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+  // $( '.main-img' ).slideUp( 1000 );
+
+  function moveContainer(containerName){
+    $('html, body').animate({
+      scrollTop: $("."+containerName).offset().top
+  }, 2000);
+  }
+

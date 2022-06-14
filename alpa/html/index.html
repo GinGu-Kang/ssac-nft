@@ -8,6 +8,8 @@
     <link  href="/css/index.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="/js/index.js" ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 </head>
 <body>
     <!--container01-->
@@ -19,20 +21,79 @@
                 </div>
                 <id class="gnb">
                     <ul>
-                        <li href="#">Story</li>
-                        <li href="#">Galley</li>
-                        <li href="#">Load Map</li>
-                        <li href="#">Team</li>
-                        <li href="#">FAQ</li>
+                        <li  onclick="moveContainer('container02')">Story</li>
+                        <li  onclick="moveContainer('container03')">Galley</li>
+                        <li  onclick="moveContainer('container04')">Load Map</li>
+                        <li  onclick="moveContainer('container05')">Team</li>
+                        <li  onclick="moveContainer('container06')">FAQ</li>
                     </ul>    
                 </id>
             </nav>
         </header>
+        <div class="main-section">
+            <div class="main-SSAG">
+                <div class="main-img" 
+                data-aos="fade-up" 
+                data-aos-offset="200" 
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500" >
+                    <img src="/images/main-img.png">
+                </div>
+                <div class="main-logo" class="main-img" 
+                data-aos="fade-up" 
+                data-aos-offset="200" 
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1200" >
+                    <img src="/images/ssag-logo.png">
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--container02-->
     <div class="container02">
-        <div class="story-contents">
+        <img class="container02-img" id="hand-img1" src="/images/hand1.png" 
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1800">
+        <img class="container02-img" id="hand-img2" src="/images/hand2.png"
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="700">
+        <img class="container02-img" id="hand-img3" src="/images/hand3.png"
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+        <img class="container02-img" id="hand-img4" src="/images/hand4.png"
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+        <img class="container02-img" id="hand-img5" src="/images/hand5.png"
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+        <img class="container02-img" id="hand-img6" src="/images/hand6.png"
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+        <img class="container02-img" id="hand-img7" src="/images/hand7.png"
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+
+
+        <div class="story-contents" 
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
             <!--알파카 이미지-->
             <div class="items">
                 <div class="items-inner">
@@ -102,11 +163,42 @@
 
     <!--container04--> 
     <div class="container04">
-        <div class="section-loadmap">
+        <img class="container04-img" id="left1" src="/images/left1.png" 
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+        <img class="container04-img" id="left2" src="/images/left2.png" 
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+        <img class="container04-img" id="left3" src="/images/left3.png" 
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+        <img class="container04-img" id="right1" src="/images/right1.png" 
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+        <img class="container04-img" id="right2" src="/images/right2.png" 
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+        <img class="container04-img" id="right3" src="/images/right3.png" 
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+
+        <div class="section-loadmap" >
             <span class="loadmap-title">
                 LOAD MAP
             </span>
-            <div class="loadmap-content">
+            <div class="loadmap-content slide-top">
                 <div class="bar">
                     <img class="loadmap-bar" src="/images/bar.png">
                 </div>
@@ -123,7 +215,10 @@
                         </span>
                     </div>
                     <!--2022.06-->
-                    <div class="load-contents">
+                    <div class="load-contents" data-aos="fade-up" 
+                    data-aos-offset="200" 
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1200">
                         <div class="sub-title">
                             <p>2022.06</p>
                         </div>
@@ -150,7 +245,11 @@
                         </div>
                     </div>
                     <!--2022.07-->
-                    <div class="load-contents">
+                    <div class="load-contents" 
+                    data-aos="fade-up" 
+                    data-aos-offset="200" 
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1200">
                         <div class="sub-title">
                             <p>2022.07</p>
                         </div>
@@ -167,7 +266,11 @@
                         </div>
                     </div>
                     <!--2022.08-->
-                    <div class="load-contents">
+                    <div class="load-contents"
+                    data-aos="fade-up" 
+                    data-aos-offset="200" 
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1200">
                         <div class="sub-title">
                             <p>2022.08</p>
                         </div>
@@ -184,7 +287,11 @@
                         </div>
                     </div>
                     <!--2022.10-->
-                    <div class="load-contents">
+                    <div class="load-contents"
+                    data-aos="fade-up" 
+                    data-aos-offset="200" 
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1200">
                         <div class="sub-title">
                             <p>2022.10</p>
                         </div>
@@ -210,7 +317,11 @@
                         </div>
                     </div>
                     <!--2022.11-->
-                    <div class="load-contents">
+                    <div class="load-contents"
+                    data-aos="fade-up" 
+                    data-aos-offset="200" 
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1200">
                         <div class="sub-title">
                             <p>2022.11</p>
                         </div>
@@ -225,7 +336,11 @@
                                     한정판 ‘Alpa Gang 3D NFT’ 에어드랍</p>
                             </div>  
                         </div>
-                        <div class="loadmap-items">
+                        <div class="loadmap-items"
+                        data-aos="fade-up" 
+                    data-aos-offset="200" 
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1200">
                             <div class="loadmap-img">
                                 <img src="/images/loadmap/loadmap_8.png">
                             </div>
@@ -239,7 +354,11 @@
                         </div>
                     </div>
                     <!--2023.01-->
-                    <div class="load-contents">
+                    <div class="load-contents"
+                    data-aos="fade-up" 
+                    data-aos-offset="200" 
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1200">
                         <div class="sub-title">
                             <p>2023.01</p>
                         </div>
@@ -260,48 +379,141 @@
     </div>
     <!--container05--> 
     <div class="container05">
-        <div class="section-partners">
+        <div class="section-partners" 
+        data-aos="fade-up" 
+                data-aos-offset="200" 
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1200">
             <h1>OUR PARTNERS</h1>
             <div class="partner-items">
                 <div class="partner-inner">
-                    <img class="partener-img" src="/images/nft02.png">
-                    <img class="partener-img" src="/images/nft04.png">
-                    <img class="partener-img" src="/images/nft05.png">
-                    <img class="partener-img" src="/images/nft03.png">
+                    
+                    <div class="partner-item">
+                        <img class="partner-img" src="/images/nft02.png">
+                        <span class="partner-text">Development</span>
+                        <span class="partner-text-name">#K.JG</span>
+                    </div>
+                    <div class="partner-item">
+                        <img class="partner-img" src="/images/nft04.png">
+                        <span class="partner-text">Art & Design</span>
+                        <span class="partner-text-name">#O.JH</span>
+                    </div>
+                    <div class="partner-item">
+                        <img class="partner-img" src="/images/nft05.png">
+                        <span class="partner-text">Art & Design</span>
+                        <span class="partner-text-name">#B.MS</span>
+                    </div>
+                    <div class="partner-item">
+                        <img class="partner-img" src="/images/nft03.png">
+                        <span class="partner-text">Art & Design</span>
+                        <span class="partner-text-name">#K.DH</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!--container06--> 
     <div class="container06">
-        <div class="section-FAQ">
+        <div class="section-FAQ"
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
             <h1>FAQ</h1>
             <div class="FAQ-items">
-                <div class="FAQ-inner">
+                <div class="FAQ-inner" >
                     <div class="FAQ-box">
                         <div class="FAQ-title">
-                            <p>NFT 한정판 이미지가 있나요?</p>
+                            <p>
+                                <span class="Q">Q</span> 
+                                <span class="question">한정판 NFT가 있나요?</span>
+                                <label for="qs-1">
+                                <svg  id="qs-1-svg" onclick="changeAngle('qs-1')" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L9 9L17 1" stroke="#00ffb1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                </label>
+                                <input id="qs-1" type="checkbox">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="qs-1-answer" class="FAQ-inner-answer">
+                    <div class="FAQ-box">
+                        <div class="FAQ-title">
+                            <p>
+                                <span class="A">A</span> 
+                                <span class="answer">추후 공개 예정입니다.</span>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="FAQ-inner">
                     <div class="FAQ-box">
                         <div class="FAQ-title">
-                            <p>Youtube, Blog, 언론 송출 마켓팅은 어떻게 진행되나요?</p>
+                            <p>
+                                <span class="Q">Q</span>
+                                <span class="question">Youtube, Blog, 언론 송출 마케팅은 어떻게 진행되나요?</span>
+                                <label for="qs-2">
+                                <svg id="qs-2-svg" onclick="changeAngle('qs-2')" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L9 9L17 1" stroke="#00ffb1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                </label>
+                                <input id="qs-2" type="checkbox">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="qs-2-answer" class="FAQ-inner-answer">
+                    <div class="FAQ-box">
+                        <div class="FAQ-title">
+                            <p>
+                                <span class="A">A</span> 
+                                <span class="answer">추후 공개 예정입니다.</span>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="FAQ-inner">
                     <div class="FAQ-box">
                         <div class="FAQ-title">
-                            <p>웹툰 작가는 비공개인가요?</p>
+                            <p>
+                                <span class="Q">Q</span>
+                                <span class="question">웹툰 작가는 비공개인가요?</span>
+                                <label for="qs-3">
+                                <svg id="qs-3-svg" onclick="changeAngle('qs-3')" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L9 9L17 1" stroke="#00ffb1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                </label>
+                                <input id="qs-3" type="checkbox">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="qs-3-answer" class="FAQ-inner-answer">
+                    <div class="FAQ-box">
+                        <div class="FAQ-title">
+                            <p>
+                                <span class="A">A</span> 
+                                <span class="answer">추후 공개 예쩡입니다.</span>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="FAQ-inner">
                     <div class="FAQ-box">
                         <div class="FAQ-title">
-                            <p>한정판 NFT도 코인 채굴이 가능한가요?</p>
+                            <p>
+                                <span class="Q">Q</span>
+                                <span class="question">한정판 NFT도 코인 채굴이 가능한가요?</span>
+                                <label for="qs-4">
+                                <svg id="qs-4-svg" onclick="changeAngle('qs-4')" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L9 9L17 1" stroke="#00ffb1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                </label>
+                                <input id="qs-4" type="checkbox">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="qs-4-answer" class="FAQ-inner-answer">
+                    <div class="FAQ-box">
+                        <div class="FAQ-title">
+                            <p>
+                                <span class="A">A</span> 
+                                <span class="answer">네 가능합니다.</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -310,20 +522,21 @@
     </div>
     <!--footer--> 
     <footer>
-        <div class="section.footer">
+        <div class="section-footer">
             <!--logo image-->
-            <img src="#">
+            <img class="footer-img" src="/images/footer-ssaglogo.png">
                 <div class="footer-items">
                     <div class="footer-inner01">
-                        <p>주식회사
-                        대표이사
-                        충청북도 청주시
-                        E-mail.Alapa.project@gmail.com
-                        사업자번호
-                        </p>
+                        <span class="footer-item">주식회사</span> 
+                        <span class="footer-item">대표이사</span>
+                        <span class="footer-item">충청북도 청주시 </span>
+                        <span class="footer-item">E-mail.Alapa.project@gmail.com </span>
+                        <span >사업자번호</span>
                     </div>
+                    <div class="footer-font">
                     <div class="footer-inner01">
                         <p>COPYRIGHT @Alpaplan.ALL RIGHTS RESERVED</p>
+                    </div>
                     </div>
                 </div>
         </div>
@@ -333,7 +546,6 @@
 
 </body>
 <script>
-
-
+    AOS.init();
 </script>
 </html>
